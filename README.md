@@ -211,42 +211,6 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Usage
-
-### Data Preparation
-
-Ensure the **PAD-UFES-20** dataset is organized with images and corresponding metadata CSV files. The code expects patient-level splitting to prevent information leakage.
-
-```bash
-# Directory structure
-data/
-├── images/
-├── metadata.csv
-└── splits/
-    ├── train.csv
-    └── test.csv
-```
-
-### Training
-
-Train the proposed cross-attention model:
-
-```bash
-python train.py --model cross_attention --data_path ./data/PAD-UFES-20 --epochs 50
-```
-
-Train baseline models:
-
-```bash
-# Image-only (ResNet18)
-python train.py --model resnet18 --data_path ./data/PAD-UFES-20
-
-# Late Fusion
-python train.py --model late_fusion --data_path ./data/PAD-UFES-20
-
-# Metadata-only (Logistic Regression)
-python train.py --model logistic_regression --data_path ./data/PAD-UFES-20
-```
 
 ### Hyperparameters
 
@@ -370,5 +334,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🤝 Contact
 
 For questions or collaborations, please contact:
-- **Krishna Mridha**: [Email Placeholder]
-- **Humayera Islam**: [Email Placeholder]
+- **Krishna Mridha**: kxm828@case.edu
+- **Humayera Islam**: hikf3@mail.missouri.edu
+
