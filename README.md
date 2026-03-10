@@ -256,7 +256,7 @@ Paired bootstrap comparison (B=2000 resamples) indicates that while cross-attent
 ### Training Dynamics
 
 <p align="center">
-  <img src="assets/training_dynamics.png" width="950" alt="Training loss and ROC/PR curves">
+  <img src="assets/CHC-Page 19.jpeg" width="950" alt="Training loss and ROC/PR curves">
 </p>
 
 **Figure 2.** (a) Training and validation loss curves demonstrating stable convergence. (b) ROC curves comparing four modeling approaches. (c) Precision–recall curves illustrating model performance under class imbalance.
@@ -264,7 +264,7 @@ Paired bootstrap comparison (B=2000 resamples) indicates that while cross-attent
 ### Confusion Matrices
 
 <p align="center">
-  <img src="assets/confusion_matrices.png" width="950" alt="Normalized confusion matrices for all models">
+  <img src="assets/confusion.png" width="950" alt="Normalized confusion matrices for all models">
 </p>
 
 **Figure 3.** Normalized confusion matrices. The cross-attention model achieves the highest specificity, reducing false positives for benign lesions (0.05) compared with baselines, while maintaining a low false negative rate for malignant lesions (0.03).
@@ -296,7 +296,7 @@ To understand how clinical context influences visual decision-making, we provide
 ### Cross-Attention Visualization
 
 <p align="center">
-  <img src="assets/attention_maps.png" width="950" alt="Cross-attention maps for representative test samples">
+  <img src="assets/fig4.png" width="950" alt="Cross-attention maps for representative test samples">
 </p>
 
 **Figure 4.** Qualitative analysis of cross-attention maps. Brighter regions indicate higher attention weights. Correct predictions generally show attention focused on lesion structures, whereas misclassified samples exhibit more diffuse attention patterns.
