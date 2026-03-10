@@ -603,8 +603,8 @@ results = {
 with open(os.path.join(OUTDIR, "multimodal_crossattn_results.json"), "w") as f:
     json.dump(results, f, indent=2)
 
-print(f"✅ Saved: {best_path}")
-print(f"✅ Saved: {os.path.join(OUTDIR, 'multimodal_crossattn_results.json')}")
+print(f"Saved: {best_path}")
+print(f"Saved: {os.path.join(OUTDIR, 'multimodal_crossattn_results.json')}")
 
 # ===========================================================
 # STEP 19) PLOT TRAIN LOSS VS VAL LOSS
