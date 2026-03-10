@@ -318,7 +318,7 @@ If you use this code or dataset in your research, please cite the following pape
   title={Cross-Attention Enables Context-Aware Multimodal Skin Lesion Diagnosis},
   author={Mridha, Krishna and Islam, Humayera},
   journal={American Medical Informatics Association Submission},
-  year={2024},
+  year={2026},
   affiliation={Case Western Reserve University; University of Chicago}
 }
 ```
