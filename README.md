@@ -1,3 +1,12 @@
+# Cross-Attention Enables Context-Aware Multimodal Skin Lesion Diagnosis
+
+Official repository for the paper:
+
+**Cross-Attention Enables Context-Aware Multimodal Skin Lesion Diagnosis**  
+**Krishna Mridha**, **Humayera Islam**  
+Case Western Reserve University, University of Chicago
+
+
 ## 📋 Abstract
 
 Clinical diagnosis of skin lesions is inherently context-aware: dermatologists interpret lesion morphology together with patient-specific factors such as age, anatomical location, lesion diameter, and skin phenotype. However, many deep learning systems for skin lesion classification rely on images alone and do not explicitly model structured clinical metadata.
