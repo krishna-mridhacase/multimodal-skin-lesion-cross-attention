@@ -83,7 +83,7 @@ Cross-attention is computed as:
 ```math
 H'_{meta} = \text{softmax}\left(\frac{(H_{meta}W_Q)(H_{img}W_K)^T}{\sqrt{d_k}}\right)(H_{img}W_V)
 
-
+```
 4. Cross-Attention Multimodal Model (Proposed)
 Input Processing
 Visual tokens: ViT-B/16 extracts spatial token sequence H_img ∈ ℝ^(T_img × d)
