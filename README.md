@@ -33,3 +33,8 @@ This repository contains code for:
 ---
 
 ## Figure 1: Multimodal Framework
+
+
+<p align="center">
+  <img src="assets/skin_disease_four_architectures.png" width="950">
+</p>
