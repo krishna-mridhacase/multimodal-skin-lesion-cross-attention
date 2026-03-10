@@ -256,7 +256,7 @@ Paired bootstrap comparison (B=2000 resamples) indicates that while cross-attent
 ### Training Dynamics
 
 <p align="center">
-  <img src="assets/CHC-Page 19.jpeg" width="950" alt="Training loss and ROC/PR curves">
+  <img src="assets/CHC - Page 19.jpeg" width="950" alt="Training loss and ROC/PR curves">
 </p>
 
 **Figure 2.** (a) Training and validation loss curves demonstrating stable convergence. (b) ROC curves comparing four modeling approaches. (c) Precision–recall curves illustrating model performance under class imbalance.
