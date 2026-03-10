@@ -1,5 +1,3 @@
-# multimodal-skin-lesion-cross-attention
-
 
 # Cross-Attention Enables Context-Aware Multimodal Skin Lesion Diagnosis
 
