@@ -38,3 +38,47 @@ This repository contains code for:
 <p align="center">
   <img src="assets/skin_disease_four_architectures.png" width="950">
 </p>
+
+
+**Figure 1.** Overview of the multimodal framework for context-aware skin lesion classification. The model integrates dermoscopic images with structured clinical metadata (age, sex, Fitzpatrick skin type, anatomical site, and lesion diameter). Four modeling strategies are evaluated:  
+(1) metadata-only logistic regression,  
+(2) image-only convolutional neural network (ResNet18),  
+(3) multimodal late fusion through feature concatenation, and  
+(4) the proposed **cross-attention multimodal architecture**.  
+In the proposed model, metadata tokens attend to visual tokens extracted by a Vision Transformer, enabling metadata-guided interpretation of lesion morphology prior to classification.
+
+---
+
+## Proposed Model Architecture
+
+The proposed model performs **structured multimodal fusion** by allowing clinical metadata to interact directly with image tokens.
+
+### Input modalities
+
+#### Dermoscopic image
+A dermoscopic image is resized to `224 × 224` and processed through a pretrained **Vision Transformer (ViT-B/16)** to obtain spatial image tokens.
+
+#### Structured metadata
+Clinical metadata include:
+
+- age
+- sex
+- Fitzpatrick skin type
+- anatomical site
+- lesion diameter
+
+Categorical features are embedded into learned metadata tokens, while numerical features are normalized and projected into the same latent space.
+
+---
+
+### Cross-attention mechanism
+
+Let:
+
+- `H_img ∈ R^(T_img × d)` be the image token sequence from ViT
+- `H_meta ∈ R^(T_meta × d)` be the metadata token sequence
+
+Cross-attention is computed as:
+
+```math
+H'_{meta} = \text{softmax}\left(\frac{(H_{meta}W_Q)(H_{img}W_K)^T}{\sqrt{d_k}}\right)(H_{img}W_V)
