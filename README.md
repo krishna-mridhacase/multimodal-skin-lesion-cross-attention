@@ -198,7 +198,7 @@ Require: Image I, numerical metadata x_num, missingness mask x_miss, categorical
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/context-aware-skin-lesion.git
+git clone https://github.com/krishna-mridhacase/multimodal-skin-lesion-cross-attention.gitt
 cd context-aware-skin-lesion
 
 # Create virtual environment
